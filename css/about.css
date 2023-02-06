@@ -1,0 +1,242 @@
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #FFF;
+    height: 10px;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(50% - 665px);
+    margin: 121px 0 144px 0;
+}
+
+.preview-info__crumbs {
+    font: 400 12px/208.5% var(--font);
+}
+
+.mark {
+    color: #E47500;
+}
+
+.preview__info_title {
+    font: 700 30px/180.5% var(--font);
+    max-width: 425px;
+    margin: 38px 0 25px 0;
+}
+
+.preview__info_desc {
+    font: 400 15px/208.5% var(--font);
+    max-width: 414px;
+    margin-bottom: 57px;
+}
+
+.preview__info_link {
+    font: 500 16px/24px var(--font);
+    padding: 11px 57px 16px 19px;
+    background: #FA8305;
+    border-radius: 40px;
+}
+
+.preview__img-wrap {
+    position: relative;
+    max-width: 739px;
+}
+
+.preview__img {
+    width: 100%;
+}
+
+.preview_btns {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translateY(-103%);
+    background: #333;
+    width: 179px;
+    height: 67px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advantages {
+    padding: 0 calc(50% - 610px);
+    margin-bottom: 147px;
+}
+
+.advantages__title {
+    font: 600 25px/180.5% var(--font);
+    margin-bottom: 63px;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;;
+}
+
+.advantages__item {
+    width: 378px;
+    height: 348px;
+    border-radius: 20px;
+    background: #1C140F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 64px 37px;
+}
+
+.advantages__item_color {
+    font: 400 14px/187.5% var(--font);
+    padding: 7px 35px 6px 14px;
+    border-radius: 8px;
+    width: 140px;
+}
+
+.advantages__item_title {
+    font: 600 20px/187.5% var(--font);
+}
+
+.advantages__item_desc {
+    font: 400 14px/187.5% var(--font);
+    width: 304px;
+}
+
+.purple {
+    background: #B000DC1C;
+}
+
+.brown {
+    background: #DC42001C;
+}
+
+.green {
+    background: #00DC8D1C;
+}
+
+.game {
+    background: #1C140F;
+    display: flex;
+    justify-content: space-around;
+    padding: 113px calc(50% - 660px) 0;
+    margin-bottom: 148px;
+    flex-wrap: wrap;
+}
+
+.game__img {
+    width: 496px;
+}
+
+.game__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game__pre-title {
+    font: 500 16px/202.5% var(--font);
+    margin: 14px 0;
+}
+
+.game__title {
+    font: 600 28px/157.5% var(--font);
+    width: 536px;
+    margin-bottom: 14px;
+}
+
+.game__desc {
+    font: 400 16px/202.5% var(--font);
+    margin-bottom: 100px;
+    width: 526px;
+}
+
+.team {
+    width: 100%;
+    padding: 0 calc(50% - 632px);
+    margin-bottom: 157px;
+}
+
+.team__title {
+    font: 600 25px/180.5% var(--font);
+    margin-bottom: 53px;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.team__item {
+    width: 295px;
+    height: 253px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #1C140F;
+}
+
+.team__item_name {
+    font: 600 19px/202.5% var(--font);
+}
+
+@media (max-width: 1180px) {
+    .team__list {
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .preview__img-wrap {
+        display: none;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .game__img {
+        width: 100%;
+    }
+
+    .game__title {
+        width: 100%;
+    }
+
+    .game__desc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .advantages__list {
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .preview {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 380px) {
+    .advantages__item {
+        padding: 5px 28px;
+    }
+
+    .advantages__item_desc {
+        width: 250px;
+    }
+}
