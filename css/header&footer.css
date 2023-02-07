@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -12,13 +19,14 @@ a {
 }
 
 :root {
-    --font: 'Arial', sans-serif;
+    --font: 'Rubik', sans-serif;
 }
 
 body {
     color: #FFF;
     background: #000;
     font: 400 14px/1 var(--font);
+    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
 }
 
 .header {
@@ -128,7 +136,7 @@ body {
 }
 
 .subscribe__form_btn {
-    font: 400 13px/20px var(--font);
+    font: 400 13px/100% var(--font);
     box-sizing: content-box;
     padding: 8px 13.5px 9px 22.2px;
     background: #DC7000;
@@ -266,6 +274,10 @@ body {
 
     .header {
         height: 160px;
+    }
+
+    .nav__item {
+        border-bottom: 1px solid #FA8305;
     }
 }
 
