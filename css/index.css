@@ -37,14 +37,6 @@
     top: 121px;
 }
 
-unity {
-    position: absolute;
-    width: 96px;
-    height: 30px;
-    left: 836px;
-    top: 409px;
-}
-
 .trending-games {
     width: 100%;
     position: relative;
@@ -128,7 +120,10 @@ unity {
 .branches {
     margin-top: 173px;
     background-image: url("../images/forest-bg.png");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 93px 0;
 }
 
 .branches__title {

@@ -188,6 +188,10 @@
     padding: 30px;
 }
 
+.reviews__list__item:nth-child(1) {
+    background: #0F0901;
+}
+
 .reviewer {
     width: 100%;
     height: 50px;

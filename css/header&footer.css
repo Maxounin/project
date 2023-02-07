@@ -135,7 +135,7 @@ body {
 }
 
 .subscribe__form_btn {
-    font: 400 13px/20px var(--font);
+    font: 400 13px/100% var(--font);
     box-sizing: content-box;
     padding: 8px 13.5px 9px 22.2px;
     background: #DC7000;
