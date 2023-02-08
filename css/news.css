@@ -208,5 +208,8 @@
         margin: 0;
     }
 
-    .detailed__ar
+    .detailed-article:nth-child(2) {
+        border-bottom: 0.7px solid #A5A5A5;
+        margin-bottom: 130px;
+    }
 }
