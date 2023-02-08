@@ -7,15 +7,16 @@
     <link href="css/header&footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header class="header">
-    <a href="index.html" class="header__logo" title="Home"><img src="images/logo.svg"></a>
+<header class="header js">
+    <a href="index.html" class="header__logo" title="Home"><img title="Logo" alt="Logo" src="images/logo.svg"></a>
+    <button type="button" class="header__burger-menu"><img src="images/menu.svg" class="menu" alt="Menu" title="Menu"></button>
     <nav class="nav">
         <ul class="nav__links">
-            <li class="nav__item"><a href="index.html" class="nav__item_link">Home</a> </li>
-            <li class="nav__item"><a href="about.html" class="nav__item_link">About Us</a></li>
-            <li class="nav__item"><a href="services.html" class="nav__item_link">Portfolio</a></li>
-            <li class="nav__item"><a href="news.html" class="nav__item_link">News</a></li>
-            <li class="nav__item"><a href="contact.html" class="nav__item_contact">Contact Us</a></li>
+            <li class="nav__item"><a title="Home" href="index.html" class="nav__item_link">Home</a> </li>
+            <li class="nav__item"><a title="About us" href="about.html" class="nav__item_link">About Us</a></li>
+            <li class="nav__item"><a title="Portfolio" href="services.html" class="nav__item_link">Portfolio</a></li>
+            <li class="nav__item"><a title="Contact Us" href="news.html" class="nav__item_link">News</a></li>
+            <li class="nav__item"><a title="Contact Us" href="contact.html" class="nav__item_contact">Contact Us</a></li>
         </ul>
     </nav>
 </header>
@@ -88,7 +89,46 @@
 </section>
 
 <section class="reviews">
-
+    <h3 class="reviews__title">Trusted by Thousands of Happy Customer</h3>
+    <p class="reviews__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy .</p>
+    <ul class="reviews__list">
+        <li class="reviews__list__item">
+            <div class="reviewer">
+                <img alt="" title="" src="images/review1.png" class="reviewer__img">
+                <div class="reviewer__info">
+                    <span class="reviewer__name">Viezh Robert</span>
+                    <span class="reviewer__location">Warsaw, Poland</span>
+                </div>
+                <span class="reviewer__rating_num">4.5</span>
+                <img alt="" title="Rating" class="reviewer__rating_img" src="images/star.svg">
+            </div>
+            <p class="reviews__list__item_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        </li>
+        <li class="reviews__list__item">
+            <div class="reviewer">
+                <img alt="" title="" src="images/review2.png" class="reviewer__img">
+                <div class="reviewer__info">
+                    <span class="reviewer__name">Yessica Christy</span>
+                    <span class="reviewer__location">Shanxi, China</span>
+                </div>
+                <span class="reviewer__rating_num">4.5</span>
+                <img alt="" title="Rating" class="reviewer__rating_img" src="images/star.svg">
+            </div>
+            <p class="reviews__list__item_desc">Lorem Ipsum is simply dummy text of the printing and </p>
+        </li>
+        <li class="reviews__list__item">
+            <div class="reviewer">
+                <img alt="" title="" src="images/review3.png" class="reviewer__img">
+                <div class="reviewer__info">
+                    <span class="reviewer__name">Kim Young Jou</span>
+                    <span class="reviewer__location">Seoul, South Korea</span>
+                </div>
+                <span class="reviewer__rating_num">4.5</span>
+                <img alt="" title="Rating" class="reviewer__rating_img" src="images/star.svg">
+            </div>
+            <p class="reviews__list__item_desc"></p>
+        </li>
+    </ul>
 </section>
 
 <section class="prefooter">
@@ -116,9 +156,9 @@
             <h4 class="footer__item_title">About Us</h4>
             <ul>
                 <li class="footer__item_list"><a href="#" title="Zeux">Zeux</a></li>
-                <li class="footer__item_list"><a href="#" title="Portfolio">Portfolio</a></li>
+                <li class="footer__item_list"><a href="services.html" title="Portfolio">Portfolio</a></li>
                 <li class="footer__item_list"><a href="#" title="Careers">Careers</a></li>
-                <li class="footer__item_list"><a href="#" title="Contact Us">Contact Us</a></li>
+                <li class="footer__item_list"><a href="contact.html" title="Contact Us">Contact Us</a></li>
             </ul>
         </li>
         <li class="footer__item">
@@ -128,10 +168,10 @@
         </li>
         <li class="footer__item">
             <ul class="footer__item_links">
-                <li class="footer__item_link"><a href="#" title="FaceBook"><img src="images/facebook.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Instagram"><img src="images/instagram.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Twitter"><img src="images/twitter.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Linkedin"><img src="images/linkedin.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="FaceBook"><img title="Facebook" alt="Facebook" src="images/facebook.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Instagram"><img title="Instagram" alt="Instagram" src="images/instagram.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Twitter"><img title="Twitter" alt="Twitter" src="images/twitter.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Linkedin"><img title="Linkedin" alt="Linkedin" src="images/linkedin.svg"></a></li>
             </ul>
         </li>
     </ul>

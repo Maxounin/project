@@ -1,4 +1,8 @@
-button {
+main {
+    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
+}
+
+.preview_btn {
     border: none;
     outline: none;
     background: transparent;
@@ -14,8 +18,15 @@ button {
     margin: 121px 0 144px 0;
 }
 
-.preview-info__crumbs {
-    font: 400 12px/208.5% var(--font);
+.preview__crumbs {
+    font: 400 16px/208.5% var(--font);
+    color: #E47500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.preview__crumbs_home {
+    color: #FFF;
 }
 
 .mark {
@@ -36,7 +47,7 @@ button {
 
 .preview__info_link {
     font: 500 16px/24px var(--font);
-    padding: 11px 57px 16px 19px;
+    padding: 11px 28px 16px 19px;
     background: #FA8305;
     border-radius: 40px;
 }

@@ -7,22 +7,73 @@
     <link href="css/header&footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header class="header">
-    <a href="index.html" class="header__logo" title="Home"><img src="images/logo.svg"></a>
+<header class="header js">
+    <a href="index.html" class="header__logo" title="Home"><img title="Logo" alt="Logo" src="images/logo.svg"></a>
+    <button type="button" class="header__burger-menu"><img src="images/menu.svg" class="menu" alt="Menu" title="Menu"></button>
     <nav class="nav">
         <ul class="nav__links">
-            <li class="nav__item"><a href="index.html" class="nav__item_link">Home</a> </li>
-            <li class="nav__item"><a href="about.html" class="nav__item_link">About Us</a></li>
-            <li class="nav__item"><a href="services.html" class="nav__item_link">Portfolio</a></li>
-            <li class="nav__item"><a href="news.html" class="nav__item_link">News</a></li>
-            <li class="nav__item"><a href="contact.html" class="nav__item_contact">Contact Us</a></li>
+            <li class="nav__item"><a title="Home" href="index.html" class="nav__item_link">Home</a> </li>
+            <li class="nav__item"><a title="About us" href="about.html" class="nav__item_link">About Us</a></li>
+            <li class="nav__item"><a title="Portfolio" href="services.html" class="nav__item_link">Portfolio</a></li>
+            <li class="nav__item"><a title="Contact Us" href="news.html" class="nav__item_link">News</a></li>
+            <li class="nav__item"><a title="Contact Us" href="contact.html" class="nav__item_contact">Contact Us</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
 
-    <section class="preview"></section>
+    <section class="preview">
+        <span class="preview__crumbs"><a title="Home page" href="index.html" class="preview__crumbs_home">Home > </a>News</span>
+        <h2 class="preview__title">Lorem Ipsum is simply dummy text of the printing and.</h2>
+        <span class="preview__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+        <img alt="We on the map" title="Our offices" class="preview__map" src="images/map.png">
+        <ul class="preview__info">
+            <li class="preview__info__item">
+                <span class="preview__info__media">Follow us</span>
+                <ul class="media-list">
+                    <li class="media-list__item"><a href="#" title="FaceBook"><img class="media-list__item_img" title="Facebook" alt="Facebook" src="images/facebookDark.svg"></a></li>
+                    <li class="media-list__item"><a href="#" title="Instagram"><img class="media-list__item_img" title="Instagram" alt="Instagram" src="images/instagramDark.svg"></a></li>
+                    <li class="media-list__item"><a href="#" title="Twitter"><img class="media-list__item_img" title="Twitter" alt="Twitter" src="images/twitterDark.svg"></a></li>
+                    <li class="media-list__item"><a href="#" title="Linkedin"><img class="media-list__item_img" title="Linkedin" alt="Linkedin" src="images/linkedinDark.svg"></a></li>
+                </ul>
+            </li>
+            <li class="preview__info__item">
+                <img alt="Phone" title="Our phone number" src="images/phone.svg">
+                <span class="preview__info__item_phone">+94 4444 5555 6</span>
+            </li>
+            <li class="preview__info__item">
+                <img alt="Location" title="Our location" src="images/locationDark.svg">
+                <span class="preview__info__item_location">but also the leap into electronic typesetting</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <form class="form" method="post">
+            <h3 class="form__title">Say hello</h3>
+            <span class="form__desc">Lorem Ipsum is simply dummy text of the printing .</span>
+            <div class="form__inputs">
+                <div class="input_first-name input">
+                    <label for="firstName" class="first-name">First Name</label>
+                    <input class="inp" id="firstName" type="text">
+                </div>
+                <div class="input_last-name input">
+                    <label for="lastName" class="last-name">Last Name</label>
+                    <input class="inp" id="lastName" type="text">
+                </div>
+                <div class="input_email input">
+                    <label for="email" class="email">Email Address</label>
+                    <input class="inp" id="email" type="email">
+                </div>
+                <div class="input_message input">
+                    <label for="message" class="message">Message</label>
+                    <textarea class="inp message__input" id="message"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="form__submit">Get in touch</button>
+        </form>
+    </section>
 
     <section class="prefooter">
         <h3 class="prefooter__title">Lorem Ipsum</h3>
@@ -49,9 +100,9 @@
             <h4 class="footer__item_title">About Us</h4>
             <ul>
                 <li class="footer__item_list"><a href="#" title="Zeux">Zeux</a></li>
-                <li class="footer__item_list"><a href="#" title="Portfolio">Portfolio</a></li>
+                <li class="footer__item_list"><a href="services.html" title="Portfolio">Portfolio</a></li>
                 <li class="footer__item_list"><a href="#" title="Careers">Careers</a></li>
-                <li class="footer__item_list"><a href="#" title="Contact Us">Contact Us</a></li>
+                <li class="footer__item_list"><a href="contact.html" title="Contact Us">Contact Us</a></li>
             </ul>
         </li>
         <li class="footer__item">
@@ -61,10 +112,10 @@
         </li>
         <li class="footer__item">
             <ul class="footer__item_links">
-                <li class="footer__item_link"><a href="#" title="FaceBook"><img src="images/facebook.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Instagram"><img src="images/instagram.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Twitter"><img src="images/twitter.svg"></a></li>
-                <li class="footer__item_link"><a href="#" title="Linkedin"><img src="images/linkedin.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="FaceBook"><img title="Facebook" alt="Facebook" src="images/facebook.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Instagram"><img title="Instagram" alt="Instagram" src="images/instagram.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Twitter"><img title="Twitter" alt="Twitter" src="images/twitter.svg"></a></li>
+              <li class="footer__item_link"><a href="#" title="Linkedin"><img title="Linkedin" alt="Linkedin" src="images/linkedin.svg"></a></li>
             </ul>
         </li>
     </ul>
