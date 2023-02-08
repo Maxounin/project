@@ -1,10 +1,16 @@
+main {
+
+    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
+}
+
 .preview {
     width: 100%;
     height: 922px;
-    background-image: url("../images/bg.svg");
+    background-image: url("../images/complexBG.png");
     background-repeat: no-repeat;
-    background-position: 85%;
+    background-position: 70%;
     position: relative;
+    background-color: #000;
 }
 
 .preview__title {
@@ -20,6 +26,7 @@
 .preview__desc_sub {
     font: 500 16px/200% var(--font);
     margin: 26px 0 50px;
+    max-width: 450px;
 }
 
 .preview__details {
@@ -34,30 +41,6 @@
     height: 512px;
     position: absolute;
     top: 121px;
-}
-
-.unity {
-    position: absolute;
-    width: 96px;
-    height: 30px;
-    left: 836px;
-    top: 409px;
-}
-
-.cryengine {
-    position: absolute;
-    width: 101px;
-    height: 99px;
-    left: 1040px;
-    top: 202px;
-}
-
-.ue {
-    position: absolute;
-    width: 59px;
-    height: 64px;
-    left: 1250px;
-    top: 218px;
 }
 
 .trending-games {
@@ -143,7 +126,10 @@
 .branches {
     margin-top: 173px;
     background-image: url("../images/forest-bg.png");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 93px 0;
 }
 
 .branches__title {
@@ -264,5 +250,13 @@
 @media (max-width: 420px) {
     .preview-info {
         top: 210px;
+    }
+
+    .preview__desc {
+        font: 600 50px/120% var(--font);
+    }
+
+    .game-example {
+        font: 600 35px/140.5% var(--font);
     }
 }
