@@ -28,18 +28,46 @@ body {
     font: 400 14px/1 var(--font);
 }
 
+body.fix {
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
-    position: fixed;
-    padding: 37px calc(50% - 661px) 0;
+    position: absolute;
+    height: 79px;
+    padding: 0 calc(50% - 661px);
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 79px;
-    transition: .3s ease;
+    transition: .3s;
     backdrop-filter: blur(8px);
     z-index: 5;
+}
+
+.header__logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.header.fix {
+    position: fixed;
+    top: -79px;
+    animation: fixHeader .3s forwards;
+}
+
+@keyframes fixHeader {
+    from {
+        top: -79px;
+    }
+
+    to {
+        top: 0;
+    }
 }
 
 .header__burger-menu {
@@ -48,6 +76,7 @@ body {
     border: none;
     display: none;
     z-index: 10;
+    transition: 0.3s;
 }
 
 .menu {
@@ -55,28 +84,33 @@ body {
 }
 
 .nav {
-    width: 674px;
+    width: 520px;
     height: 42px;
     font: 400 16px/24px var(--font);
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
 }
 
 .nav__links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 
-.nav__item_link, .nav__item_contact {
+.nav__item_link, .nav__contact {
     font: 400 16px/24px var(--font);
     color: #FFF;
 }
 
-.nav__item_contact {
+.nav__contact {
     box-sizing: content-box;
     padding: 11px 28px;
     background: #FA9021;
     border-radius: 6px;
+    border: none;
 }
 
 .prefooter {
@@ -200,11 +234,20 @@ body {
 }
 
 .show {
-    display: initial !important;
+    display: flex !important;
+    flex-direction: column;
 }
 
-.padding-zero {
-    padding: 0;
+.show-contact {
+    position: absolute;
+    display: initial !important;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rotate {
+    transform: rotate(90deg);
 }
 
 @media (max-width: 780px) {
@@ -271,6 +314,11 @@ body {
 
     .nav {
         display: none;
+        top: 0;
+    }
+
+    .nav__contact {
+        display: none;
     }
 
     .header__burger-menu {
@@ -289,11 +337,11 @@ body {
         flex-direction: column;
         align-items: center;
         height: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .header {
-        align-items: normal;
+        align-items: center;
     }
 
     .nav__item_link {

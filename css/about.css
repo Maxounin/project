@@ -1,15 +1,3 @@
-main {
-    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
-}
-
-.preview_btn {
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #FFF;
-    height: 10px;
-}
-
 .preview {
     display: flex;
     justify-content: space-between;

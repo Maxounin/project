@@ -1,8 +1,3 @@
-main {
-
-    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
-}
-
 .preview {
     width: 100%;
     height: 922px;
@@ -213,6 +208,11 @@ main {
     .ue {
         display: none;
     }
+
+    .trending-games-list {
+        justify-content: space-around;
+        row-gap: 30px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -260,5 +260,9 @@ main {
 
     .game-example {
         font: 600 35px/140.5% var(--font);
+    }
+
+    .branches__list {
+        row-gap: 50px;
     }
 }
