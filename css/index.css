@@ -106,20 +106,22 @@ main {
     margin-top: 129px;
 }
 
+.game-example-wrap {
+    padding: 0 calc(50% - 573px);
+}
+
 .game-example-title {
     font: 600 30px/187.5% var(--font);
-    padding-left: 10%;
 }
 
 .game-example-desc {
     font: 400 16px/187.5% var(--font);
-    padding: 0 52% 0 10%;
     margin: 32px 0 46px 0;
+    max-width: 545px;
 }
 
 .game-example-img {
     border-radius: 5px;
-    padding: 0 calc(50% - 573px);
     width: 100%;
 }
 

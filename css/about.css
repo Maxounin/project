@@ -61,19 +61,6 @@ main {
     width: 100%;
 }
 
-.preview_btns {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    transform: translateY(-103%);
-    background: #333;
-    width: 179px;
-    height: 67px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .advantages {
     padding: 0 calc(50% - 610px);
     margin-bottom: 147px;
