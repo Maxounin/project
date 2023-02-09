@@ -1,21 +1,25 @@
-let prevScrollpos = window.pageYOffset;
 let btn = document.querySelector('.header__burger-menu'),
     nav = document.querySelector('.nav'),
-    header = document.querySelector('.header');
+    header = document.querySelector('.header'),
+    contact = document.querySelector('.nav__contact'),
+    menuBtn = document.querySelector('.header__burger-menu');
 
 
 window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector('.js').style.top = "0";
+    if (window.scrollY > 150 && !header.classList.contains('fix')) {
+        header.classList.add('fix');
+
     } else {
-        document.querySelector('.js').style.top = "-170px";
+        if (window.scrollY <= 150 && header.classList.contains('fix')) {
+            header.classList.remove('fix');
+        }
     }
-    prevScrollpos = currentScrollPos;
+
 }
 
 btn.addEventListener('click', function () {
     nav.classList.toggle('show');
-    header.classList.toggle('padding-zero');
-    header.classList.toggle('js');
+    contact.classList.toggle('show-contact');
+    document.body.classList.toggle('fix');
+    menuBtn.classList.toggle('rotate');
 })

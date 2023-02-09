@@ -1,15 +1,3 @@
-main {
-    background: linear-gradient(176.03deg, #050301 -34.57%, #150C01 96.75%);
-}
-
-.preview_btn {
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #FFF;
-    height: 10px;
-}
-
 .preview {
     display: flex;
     justify-content: space-between;
@@ -59,19 +47,6 @@ main {
 
 .preview__img {
     width: 100%;
-}
-
-.preview_btns {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    transform: translateY(-103%);
-    background: #333;
-    width: 179px;
-    height: 67px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .advantages {
