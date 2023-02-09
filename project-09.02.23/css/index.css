@@ -1,0 +1,268 @@
+.preview {
+    width: 100%;
+    height: 922px;
+    background-image: url("../images/complexBG.png");
+    background-repeat: no-repeat;
+    background-position: 70%;
+    position: relative;
+    background-color: #000;
+}
+
+.preview__title {
+    color: #E87D0E;
+    font: 700 20px/155.2% var(--font);
+    margin-bottom: 17px;
+}
+
+.preview__desc {
+    font: 700 50px/155.2% var(--font);
+}
+
+.preview__desc_sub {
+    font: 500 16px/200% var(--font);
+    margin: 26px 0 50px;
+    max-width: 450px;
+}
+
+.preview__details {
+    padding: 14px 31px 15px 30px;
+    background: #FA8305;
+    border-radius: 40px;
+}
+
+.preview-info {
+    padding: 0 calc(71.5% - 263.5px) 0 calc(28.5% - 263.5px);
+    width: 100%;
+    height: 512px;
+    position: absolute;
+    top: 121px;
+}
+
+.trending-games {
+    width: 100%;
+    position: relative;
+}
+
+.trending-games__span_wrap {
+    padding: 0 calc(50% - 573px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending {
+    font: 700 31px/187.5% var(--font);
+}
+
+.seeall {
+    font: 500 20px/187.5% var(--font);
+    padding: 10px 30px 9px 30px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+}
+
+.trending-games-list {
+    display: flex;
+    padding: 0 calc(50% - 585px);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 57px;
+}
+
+.trending-games__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    width: 251px;
+    height: 277px;
+}
+
+.info-wrap {
+    margin-top: 25px;
+    font: 500 22px/187.5% var(--font);
+}
+
+.fire {
+    display: inline-block;
+    width: 19px;
+    height: 25px;
+    margin-right: 12px;
+}
+
+.game-example {
+    font: 600 35px/187.5% var(--font);
+    padding: 0 calc(50% - 413px);
+    text-align: center;
+    margin-bottom: 67px;
+    margin-top: 129px;
+}
+
+.game-example-wrap {
+    padding: 0 calc(50% - 573px);
+}
+
+.game-example-title {
+    font: 600 30px/187.5% var(--font);
+}
+
+.game-example-desc {
+    font: 400 16px/187.5% var(--font);
+    margin: 32px 0 46px 0;
+    max-width: 545px;
+}
+
+.game-example-img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.branches {
+    margin-top: 173px;
+    background-image: url("../images/forest-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 93px 0;
+}
+
+.branches__title {
+    font: 700 30px/187.5% var(--font);
+    text-align: center;
+    padding: 0 calc(50% - 418px);
+    margin-bottom: 25px;
+    margin-top: 93px;
+}
+
+.branches__desc {
+    font: 400 16px/187.5% var(--font);
+    text-align: center;
+    padding: 0 calc(50% - 418px);
+    margin-bottom: 99px;
+}
+
+.branches__list {
+    padding: 0 calc(50% - 529px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    row-gap: 30px;
+}
+
+.branches__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.branches__item_icon {
+    width: 65px;
+    margin-bottom: 30px;
+}
+
+.branches__item_title {
+    margin-bottom: 24px;
+    font: 500 16px/187.5% var(--font);
+}
+
+.projects {
+    width: 100%;
+    padding: 0 calc(50% - 585px);
+    margin: 218px 0 105px 0;
+}
+
+.projects__title {
+    width: 100%;
+    padding: 0 calc(50% - 152.5px);
+    font: 700 30px/187.5% var(--font);
+}
+
+.projects__desc {
+    font: 400 14px/187.5% var(--font);
+    padding: 0 calc(50% - 248.5px);
+    margin: 15px 0 71px 0;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 27px;
+    row-gap: 33px;
+    margin-bottom: 72px;
+    justify-content: center;
+}
+
+.projects__btn {
+    margin: 0 calc(50% - 71px);
+}
+
+.projects__item_img {
+    max-width: 100%;
+}
+
+@media (max-width: 1150px) {
+    .ue {
+        display: none;
+    }
+
+    .trending-games-list {
+        justify-content: space-around;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .cryengine {
+        display: none;
+    }
+
+    .preview {
+        background-image: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .unity {
+        display: none;
+    }
+
+    .game-example-desc {
+        padding: 0 10% 0 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    .trending-games__span_wrap {
+        flex-direction: column;
+    }
+
+    .seeall {
+        width: 145px;
+    }
+
+    .trending-games-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .preview-info {
+        top: 210px;
+    }
+
+    .preview__desc {
+        font: 600 50px/120% var(--font);
+    }
+
+    .game-example {
+        font: 600 35px/140.5% var(--font);
+    }
+
+    .branches__list {
+        row-gap: 50px;
+    }
+}
